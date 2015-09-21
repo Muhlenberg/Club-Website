@@ -1,7 +1,40 @@
 body {
-	background-color: #E6E6E6;
+	background-color: #C41E3A;
 }
 
 .container {
-	background-color: #C41E3A;
+	background-color: white;
+	border-width: 25px;
+	border-color: #c0c0c0;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+#r-corners {
+	border-radius: 25px;
+}
+
+.about-text {
+	padding-left: 75px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', Georgia, Times, serif;
+}
+
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+h1 { 
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.club-pic{
+	padding: 25px;
+	padding-top: 75px;
+	padding-left: 75px;	
+    border: 25px;
+    margin: 25px;
 }
