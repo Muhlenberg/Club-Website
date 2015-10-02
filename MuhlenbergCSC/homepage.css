@@ -38,3 +38,8 @@ h1 {
     border: 25px;
     margin: 25px;
 }
+input[type="text"] {
+	padding: 20px, 10px;
+	line-height: 250px;
+	width: 750px;
+}
