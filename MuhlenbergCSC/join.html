@@ -14,6 +14,25 @@
 	<!--Google Fonts-->
 	<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+	
+	
+	<script>
+	function sendMail()
+	{
+	    var yourMessage = document.getElementById("year").value;
+		//yourMessage = yourMessage.concat(document.getElementById("interest").value);
+		//yourMessage = yourMessage.contact(document.getElementById("fun_fact").value);
+	    document.location.href = "mailto:cr234383@muhlenberg.edu?Subject=Add%20to%20the%20Email%20List"
+	        + "&body=" + encodeURIComponent(yourMessage);
+			
+			
+		var link = "mailto:cr234383@muhlenberg.edu"
+			+ "?subject=" + escape("Add to the Email List")
+			+ "&body=" + "Name: " + escape(document.getElementById('usr').value) + "  Class Year: " + escape(document.getElementById('year').value) + "  Interest in club: " + escape(document.getElementById('interest').value) + "  Fun fact: " + escape(document.getElementById('fun_fact').value);
+
+		    window.location.href = link;
+	}
+	</script>
   
 </head>
 <body>
@@ -74,8 +93,12 @@
 							<label for="fun_fact">Fun Fact About Yourself: </label>
 							<textarea class="form-control" rows="5" id="fun_fact"></textarea>
 						</div>
-						<input class="btn btn-default" type="submit" value="Submit">
+						<button onclick="sendMail(); return false">Submit</button>
+						<!--<input class="btn btn-default" type="submit" value="Submit">-->
 					</form>
+					
+					
+					
 				</div>
 			</div>
 		</div>
